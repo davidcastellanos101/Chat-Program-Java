@@ -41,10 +41,10 @@ public class VentanaPrincipal {
 		ventanaPrivada = new VentanaChatPrivado(cliente);
 	}
 
-	// método que inicializa todos los componentes de la ventana
+	// mï¿½todo que inicializa todos los componentes de la ventana
 	private void initialize() {
 
-		eventos = new GestionEventos(this);		
+		eventos = new GestionEventos(this);
 		frmChatServidor = new JFrame();
 		frmChatServidor.setResizable(false);
 		frmChatServidor.setIconImage(Toolkit.getDefaultToolkit()
@@ -95,14 +95,14 @@ public class VentanaPrincipal {
 		JMenu mnOpciones = new JMenu("Opciones");
 		menuBar.add(mnOpciones);
 
-		JMenuItem mntmAbrirChatPrivado = new JMenuItem("Abrir chat privado con el servidor.");
+		JMenuItem mntmAbrirChatPrivado = new JMenuItem("Abrir chat privado con el server.");
 		mntmAbrirChatPrivado.setActionCommand(GestionEventos.ABRIR_CHAT_PRIVADO);
 		mntmAbrirChatPrivado.addActionListener(eventos);
 		mnOpciones.add(mntmAbrirChatPrivado);
 
 	}
 
-	// método que envia un mensaje a la clase cliente para que lo envíe al servidor
+	// mï¿½todo que envia un mensaje a la clase cliente para que lo envï¿½e al servidor
 	public void enviarMensaje() {
 		if (txtMsj.getText().trim().length() > 0) {
 			cliente.enviarMensaje(txtMsj.getText());
@@ -110,7 +110,7 @@ public class VentanaPrincipal {
 		}
 
 	}
-	
+
 
 	public JTextArea getTxtChat() {
 		return txtChat;
